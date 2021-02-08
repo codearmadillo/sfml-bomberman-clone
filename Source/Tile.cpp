@@ -13,9 +13,9 @@ Tile::Tile(const int x, const int y, SpriteMap* spritemap) : GraphicsEntity(x, y
     /** Set shape */
     this->shape = sf::RectangleShape();
     /** Set position */
-    this->set_size(BLOCK_SIZE, BLOCK_SIZE);
+    this->set_size(Game::BLOCK_SIZE, Game::BLOCK_SIZE);
     this->set_position(
-        BLOCK_SIZE * this->x, BLOCK_SIZE * this->y
+            Game::BLOCK_SIZE * this->x, Game::BLOCK_SIZE * this->y
     );
     /** Update shape */
     this->update_shape();
